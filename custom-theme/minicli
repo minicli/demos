@@ -11,8 +11,9 @@ use Minicli\App;
 
 $app = new App([
         'debug' => false,
-        'app_path' => __DIR__ . '/app/Command'
+        'app_path' => __DIR__ . '/app/Command',
+        'theme' => 'App\CustomTheme\Theme\Blue'
 ]);
 
-$app->setSignature("Minicli DEMOS\n./minicli help\n");
+$app->setSignature("Minicli DEMOS: Custom Theme\n./minicli styles\n");
 $app->runCommand($argv);

@@ -1,12 +1,15 @@
 <?php
 
 
-namespace App\Basic\Command\Demo;
+namespace App\CustomTheme\Command\Styles;
 
 use Minicli\Command\CommandController;
 
-class StylesController extends CommandController
+class DefaultController extends CommandController
 {
+    /**
+     * Demonstrates how to use the default print shortcuts
+     */
     public function handle()
     {
         $printer = $this->getPrinter();

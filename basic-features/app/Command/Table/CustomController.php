@@ -1,14 +1,17 @@
 <?php
 
 
-namespace App\Basic\Command\Demo;
+namespace App\Basic\Command\Table;
 
 use Minicli\Command\CommandController;
 use Minicli\Output\Filter\ColorOutputFilter;
 use Minicli\Output\Helper\TableHelper;
 
-class CustomTableController extends CommandController
+class CustomController extends CommandController
 {
+    /**
+     * Demonstrates how to use the TableHelper to print custom tables
+     */
     public function handle()
     {
         $printer = $this->getPrinter();

@@ -1,14 +1,18 @@
 <?php
 
 
-namespace App\Basic\Command\Demo;
+namespace App\Basic\Command\Styles;
 
 use Minicli\Command\CommandController;
 use Minicli\Output\CLIColors;
 use Minicli\Output\Filter\ColorOutputFilter;
 
-class CustomColorsController extends CommandController
+class CustomController extends CommandController
 {
+    /**
+     * Demonstrates different ways to manipulate the default theme and include
+     * custom styles at the Command level
+     */
     public function handle()
     {
         // creates a new ColorOutputFilter and sets a custom style

@@ -1,12 +1,15 @@
 <?php
 
 
-namespace App\Basic\Command\Demo;
+namespace App\Basic\Command\Table;
 
 use Minicli\Command\CommandController;
 
-class TableController extends CommandController
+class DefaultController extends CommandController
 {
+    /**
+     * Demonstrates simple table printing with the `printTable` method
+     */
     public function handle()
     {
         $printer = $this->getPrinter();
